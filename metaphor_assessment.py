@@ -16,7 +16,7 @@ ner = spacy.load("en_core_web_sm")
 
 query = prompts[0] # Pick any prompt from the above
 search_response = metaphor.search(
-    query, use_autoprompt=True, num_results=5,
+    query, use_autoprompt=True, num_results=n,
 )
 
 # Remove all the html tags so spacy can recognize entities and compile all text to find all named entities
